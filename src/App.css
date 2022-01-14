@@ -1,0 +1,258 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: 'Josefin Sans', sans-serif;
+}
+.black{
+  color: grey;
+  background-color: hsl(235, 21%, 11%);
+}
+.black1{
+  color: hsl(236, 33%, 92%);
+  background-color:  hsl(235, 24%, 19%);
+}
+
+.white{
+  background-color: white;
+}
+.black, .white{
+  height: 100vh;
+  width:100%;
+}
+.image{
+  background-size: cover;
+  width: 100%;
+  height:40%;
+  background-image: url(images/bg-desktop-dark.jpg);
+}
+.image2{
+  background-size: cover;
+  width: 100%;
+  height:40%;
+  background-image: url(images/bg-desktop-light.jpg);
+}
+h1{
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.flex{
+  width:40%;
+  margin:auto;
+  height: 50px;
+  padding-top:5%;
+}
+span{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+height: 30px;
+}
+form{
+  width:100%;
+ margin-top:60px;
+  height: auto !important;
+  min-height:50px;
+  border-radius: 5px;
+  background-color: white;
+display:flex;
+align-items: center;
+
+}
+.radio{
+  width:15%;
+  height:50%;
+}
+.text{
+  width:84%;
+  height:50px;
+  outline: none;
+  border:none;
+color:hsl(236, 33%, 92%);
+font-family: 'Josefin Sans', sans-serif;
+font-size: 15px;
+}
+.radio2{
+height:20px;
+width:20px;
+margin-left:20px;
+border-radius: 50%;
+border:1px solid grey;
+cursor:pointer;
+}
+
+.radio2:hover{
+  height:22px;
+  width:22px;
+  border-top-color:hsl(192, 100%, 67%);
+  border-bottom-color:hsl(280, 87%, 65%);
+  border-right-color:hsl(280, 87%, 65%);
+  border-left-color:hsl(192, 100%, 67%);
+}
+.radio-bcg{
+  background-image: url("./images/icon-check.svg"), linear-gradient(145deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+.data{
+margin-left:15px;
+}
+.data-cross{
+  text-decoration: line-through;
+  color:grey;
+  text-decoration-color: grey;
+}
+.flexForm{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  height: auto;
+  padding-bottom: 15px;
+  border-bottom: 1px solid grey;
+  margin-top: 20px;
+}
+.color{
+  color:white;
+}
+.flexForm:hover .cross{
+display: block;
+}
+.last{
+  border: none;
+  justify-content:center;
+}
+.logs, .flexForm{
+  width:100%;
+}
+
+.cross{
+  position:absolute;
+  right: 6%;
+  cursor:pointer;
+  width:15px;
+  display:none;
+  margin-left: 75%;
+}
+
+.border{
+  box-shadow: 5px 10px 50px rgb(173, 172, 172);
+  border: 1px solid rgb(156, 156, 156);
+  color: grey;
+}
+.poga{
+  border: 1px solid red;
+}
+.flexForm input:checked{
+  margin:0;padding:0;
+  -webkit-appearance:none;
+     -moz-appearance:none;
+          appearance:none;      
+}
+
+ul{
+  list-style-type: none;
+}
+li{
+  font-size:13px;
+  color: hsl(236, 9%, 61%);
+  cursor: pointer;
+}
+.blue{
+  color: hsl(220, 98%, 61%)
+}
+.margin{
+  margin-left:20px;
+  color:hsl(236, 9%, 61%);
+  font-size: 12px;
+  width: 40%;
+}
+.margin:last-child{
+ text-align: right;
+ margin-right:20px;
+}
+.seperate{
+display:flex;
+justify-content:center;
+}
+.list li{
+  padding-right: 10px;
+}
+.flexForm ul{
+  display:flex;
+  width: 80%;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cursor{
+  cursor: pointer;
+}
+.pTag{
+  color: grey;
+   text-align: center;
+  font-size: 12px;
+  margin-top:50px;
+}
+
+@media (min-width: 300px) and (max-width:700px){
+  .image{
+    background-image: url("./images/bg-mobile-dark.jpg");
+  }
+  .image2{
+    background-image: url(images/bg-mobile-light.jpg);
+  }
+  
+  .flex{
+    width:90%;
+    justify-content:center;
+    padding-top:50px;
+  }
+  form{
+    margin-top:30px;
+  }
+  span{
+    height: 25px;
+  }
+  h1{
+    font-size:26px;
+  }
+ .black1{
+   height:40px;
+ }
+ form{
+  min-height: 40px;
+}
+.text{
+  font-size: 12px;
+}
+input{
+  border-radius: 5px;
+}
+.radio2{
+  height:18px;
+  width: 18px;
+}
+.seperate{
+  position: absolute;
+  margin-top:120px;
+  width:90%;
+  align-items: center;
+  border-radius: 5px;
+}
+.border1{
+  height:40px;
+  box-shadow: 5px 10px 50px rgb(173, 172, 172);
+  border: 1px solid rgb(156, 156, 156);
+  color: grey;
+}
+.pTag{
+  margin-top:100px;
+}
+.image, .image2{
+height:25%;
+}
+
+}

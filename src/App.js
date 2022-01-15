@@ -151,8 +151,6 @@ if(atzimetie.length > 0){
     this.setState({
       value: items,
     });
-
-console.log(e)
   };
 
   render() {
@@ -193,7 +191,7 @@ console.log(e)
       <div className={moon ? "white" : "black"}>
         <div className={moon ? "image2" : "image"}>
           <div className="flex">
-            <span>
+            <div>
               <h1>TO DO</h1>
               <img
                 onClick={this.changeStatus}
@@ -201,7 +199,7 @@ console.log(e)
                 src={moon ? moonpic : sun}
                 alt="sun"
               />
-            </span>
+            </div>
             {/* teksta inputs  */}
             <form onSubmit={this.submit} className={moon ? "" : "black1"}>
               <div className="radio2" style={{ marginRight: "15px" }} />
